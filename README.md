@@ -73,7 +73,7 @@ gulp.task('default', ['connect', 'watch']);
         <section class="content content--centered">
             <h1 class="content__header">NFQ Akademija</h1>
             <p class="content__description">Pradžių pradžia.</p>
-        </div>
+        </section>
     </body>
 </html>
 ```
@@ -152,7 +152,7 @@ gulp.task('default', ['connect', 'sass', 'watch']);
         <section class="content content--centered">
             <h1 class="content__header">NFQ Akademija</h1>
             <p class="content__description">Pradžių pradžia.</p>
-        </div>
+        </section>
     </body>
 </html>
 ```
@@ -213,7 +213,7 @@ gulp.task('default', ['connect', 'sass', 'js', 'watch']);
         <section class="content content--centered">
             <h1 class="content__header">NFQ Akademija</h1>
             <p class="content__description">Pradžių pradžia.</p>
-        </div>
+        </section>
         <script type="text/javascript" src="/assets/main.js"></script>
     </body>
 </html>
@@ -235,7 +235,7 @@ gulp.task('default', ['connect', 'sass', 'js', 'watch']);
         <section class="content content--centered">
             <h1 class="content__header">NFQ Akademija</h1>
             <p class="content__description">Pradžių pradžia.</p>
-        </div>
+        </section>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="/assets/main.js"></script>
