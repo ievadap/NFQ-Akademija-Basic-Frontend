@@ -1,15 +1,191 @@
-body {
-    font-family: Helvetica;
+$transBlack: rgba(0, 0, 0, 0.4);
+$transWhite: rgba(255, 255, 255, 0.7);
+
+img {
+  width: 130px;
+  height: 130px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .content {
-    margin: 100px;
+  &__box {
+    margin: 30px;
+    padding: 30px;
+    background-color: $transBlack;
+    color: $transWhite;
+  }
 
-    &--centered {
-        text-align: center;
+  &__p {
+    margin: 15px;
+    margin-left: 0;
+  }
+
+  &__a {
+
+    &:link {
+      text-decoration: none;
+      color: rgba(115, 168, 191, 0.84);
     }
 
-    &__description {
-        color: #999;
+    &:visited {
+      text-decoration: none;
+      color: rgba(115, 168, 191, 0.84);
     }
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+
+    &:active {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__ul {
+
+    &__li {
+      margin: 15px;
+      margin-left: 0;
+    }
+  }
+  &--big {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background: url('../images/minimal.jpg') fixed no-repeat;
+  background-size: cover;
+  position: relative;
+  color: black;
+  padding: 0;
+  font-size: 16px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 991px) {
+  .affix {
+    position: static;
+  }
+}
+
+header {
+  padding: 10px 0 10px 0;
+}
+
+.col-md-12 {
+  padding-right: 0;
+}
+
+.header {
+  background-color: $transBlack;
+  color: $transWhite;
+  margin: 0 0 30px 0;
+  padding: 35px 0 30px 0;
+  width: 100%;
+}
+
+.row {
+  margin: 0;
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 100;
+}
+
+.nav {
+  padding: 20px;
+
+  li {
+    &:focus {
+      outline: 0;
+    }
+    &__a {
+      padding: 15px;
+      margin: 15px;
+      color: Black;
+
+      &:focus {
+        background-color: $transWhite;
+        color: Black;
+      }
+
+      &:hover {
+        background-color: $transWhite;
+        color: Black;
+      }
+    }
+  }
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+
+  &:active {
+    background-color: $transWhite;
+    color: Black;
+  }
+
+  &:focus {
+    @extend .dropdown-toggle:active;
+  }
+
+  &:hover {
+    @extend .dropdown-toggle:active;
+  }
+}
+
+.dropdown-menu {
+  background-color: white;
+  color: black;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  &__a {
+    margin: 1px;
+
+    &:focus {
+      background-color: $transBlack;
+      color: white;
+      text-decoration: none;
+      outline: 0;
+    }
+
+    &:hover {
+      background-color: $transBlack;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.nav-pills__li:active {
+  a {
+    &:hover {
+      background-color: $transBlack;
+      color: $transWhite;
+    }
+  }
+}
+
+.nav-pills--black {
+  color: black;
+}
+
+.nav-pills > li > a {
+  border-radius: 0px;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: $transWhite;
+  background-color: $transBlack;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: $transWhite;
 }
